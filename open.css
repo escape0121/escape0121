@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: #070707;
+}
+
+.fancy-button {
+    background-color: #444;
+    border: 2px solid #636363;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px; /* Ajouter un espace de 30 pixels en haut */
+    border-radius: 12px;
+}
+
+.fancy-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255,255,255,0.25), rgba(0,0,0,0.25));
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+.fancy-button:hover {
+    background-color: rgb(61, 61, 57);
+    color: #444;
+    transform: translateY(-5px);
+    color: white;
+    border-radius: 12px;
+}
+
+.fancy-button:hover::before {
+    opacity: 1;
+}
+
+.fancy-button span {
+    position: relative;
+    z-index: 1;
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 6em;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    -webkit-box-reflect: below -14px linear-gradient(transparent 45%, white);
+    letter-spacing: -4px;
+}
+
+h1 .red {
+    color: rgb(255, 0, 0);
+}
+h1 .blue {
+    color: rgb(0, 255, 13);
+}
+h1 .black {
+    color: black;
+}
+h1 .green {
+    color: rgb(0, 4, 255);
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('fonts/Kalam-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+button:hover {
+    background-color: #ffffff; 
+    color: #070707;
+}
+
+/*Transi*/
+.fade-out {
+    animation: fadeOut 2s forwards; 
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+::selection {
+    color: red;
+    background-color: black;
+}

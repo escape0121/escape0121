@@ -1,0 +1,9 @@
+1 --> game.txt 
+C'est le message d'intro du jeu, qui annonce le plan.
+2--> 2.txt 
+On se retrouve dans une salle ( 2D modélisée canva) avec quatre élèves, leurs photos bizarrement incrustées sur des chaises
+de classe. En cliquant dessus, on peut mener un interrogatoire à choix multiples (trois questions, une réponse, puis
+trois autres questions en fonction de la réponse et cela trois fois). élève A dira qu'il a vu un quatre couleur doré
+voler pendant le cours de maths de 8 à 9h. 
+
+

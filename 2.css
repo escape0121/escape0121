@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #070707;
+    color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+#intro-container {
+    text-align: center;
+    font-family: 'Wix Madefor Display';
+    font-size: 25px;
+}
+
+.fade-line {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fancy-button {
+    background-color: #444;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.fancy-button:hover {
+    background-color: #555;
+}
